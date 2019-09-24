@@ -25,7 +25,7 @@ td:nth-child(1), tr:last-of-type, td:nth-child(12), td:nth-child(13), td:nth-chi
 tr:nth-child(1) td {
     border-top: none !important;
 }
-#score, #score-label, .controls, #level, #level-label {
+#score, #score-label, .controls, #lvl, #level-label {
     text-align: center;
 }
 .controls-wrapper {

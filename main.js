@@ -454,7 +454,7 @@ function createTable(rows,cols){
 			
 			
             else if (j >= 12 && i == 3 && j <= 16){
-                c.id = "level";
+                c.id = "lvl";
                 c.style.background = "none";
                 c.style.border = "none";
                 c.colSpan = 5;
