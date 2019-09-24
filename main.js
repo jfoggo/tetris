@@ -528,11 +528,15 @@ function init(){
         });
     }
 	g = new Game();
-    $("#left").on("touchstart mousedown",()=>{
-        if (!g.switching) g.curFig.moveLeft();
+    $("#left").on("touchstart mousedown",(event)=>{
+        event.stopPropagation();
+        event.preventDefault();
+		if (!g.switching) g.curFig.moveLeft();
         g.curFig.adj[1] = -1;
     });
-    $("#right").on("touchstart mousedown",()=>{
+    $("#right").on("touchstart mousedown",(event)=>{
+		event.stopPropagation();
+        event.preventDefault();
         if (!g.switching) g.curFig.moveRight();
         g.curFig.adj[1] = 1;
     });
