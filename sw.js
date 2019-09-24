@@ -1,4 +1,4 @@
-var CACHE_NAME = 'pdf-merger-cache';
+var CACHE_NAME = 'tetris-cache';
 var urlsToCache = [
 	'/tetris/index.html',
 	'/tetris/main.css',
