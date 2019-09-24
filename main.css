@@ -1,0 +1,95 @@
+body {
+    margin: 0px;
+	transition: background-color 0.5s ease;
+}
+#box h1 {
+    margin: 10px;
+    text-decoration: underline;
+}
+#box {
+    opacity: 0;
+}
+table {
+    border-collapse: collapse;
+    margin: auto;
+    background: white;
+}
+td {
+    width: 18px;
+    height: 18px;
+    border: solid black 1px;
+}
+td:nth-child(1), tr:last-of-type, td:nth-child(12), td:nth-child(13), td:nth-child(14), td:nth-child(15), td:nth-child(16), td:nth-child(17), td:nth-child(18)  {
+    background: #ccc;
+}
+tr:nth-child(1) td {
+    border-top: none !important;
+}
+#score, #score-label, .controls, #level, #level-label {
+    text-align: center;
+}
+.controls-wrapper {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+.controls {
+    //min-width: 45%;
+    margin-top: 0.5em;
+    display: inline-block;
+    //float: left;
+}
+.controls button {
+	top: 15px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border-type: solid;
+	border-radius: 10px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+.controls:last-of-type button {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    top: 30px;
+    //transform: rotateZ(180deg);
+}
+.controls:last-of-type button:last-of-type {
+    top: 10px;
+    margin-left: 5px;
+}
+.controls:last-of-type {
+    //float: right;
+    //width: 45%;
+    vertical-align: top;
+	float: right;
+	padding-right: 20px;
+}
+@media (max-width: 500px) {
+    .controls:last-of-type {
+        float: right;
+        padding-right: 20px;
+    }
+}
+#game-menu {
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    padding-top: 30vh;
+}
+.hidden {
+    display: none;
+}
+small {
+	position: fixed;
+	bottom: 20px;
+	width: 50%;
+	left: 25%;
+	text-align: center;
+}

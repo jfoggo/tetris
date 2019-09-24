@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=no">
+        <title>Tetris</title>
+		<link rel="icon" href="logo.png">
+		<link rel="manifest" href="manifest.json">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="jquery.min.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div id="game-menu">
+            <img src="logo.png" height="50" width="50">
+            <h1 id="clicker">Click to Start!</h1>
+			<small>
+				Highscore: <b id="highscore">0</b>
+			</small>
+            <audio id="music" controls class="hidden">
+                <source src="tetris-gameboy-02.mp3" type="audio/mp3"></source>
+            </audio>
+            <audio id="block-down" src="line-drop.mp3"></audio>
+            <audio id="block-rotate" src="block-rotate.mp3"></audio>
+            <audio id="line-remove" src="line-remove.mp3"></audio>
+            <audio id="gameover" src="gameover.mp3"></audio>
+        </div>
+        <div id="box" class="hidden">
+            <h1 align="center">
+				<b style="color:red">T</b><b style="color:green">E</b><b style="color:orange">T</b><b style="color:violet">R</b><b style="color:lightblue">I</b><b style="color:yellow">S</b>
+            </h1>
+            <table></table>
+            <div class="controls-wrapper">
+                <div class="controls">
+                    <!--<div>
+                        <button>
+                            &#8593;
+                        </button>
+                    </div>-->
+                    <div>
+                        <button id="left">
+                            &#8592;
+                        </button>
+                        <button id="down" style="opac ity:0">
+                            &#8595;
+                        </button>
+                        <button id="right">
+                            &#8594;
+                        </button>
+                    </div>
+                    <!--<div>
+                        <button id="down">
+                            &#8595;
+                        </button>
+                    </div>-->
+                </div>
+                <div class="controls" style="text-align:right">
+                    <button id="rotate-left">
+                        B
+                    </button>
+                    <button id="rotate-right">
+                        A
+                    </button>
+                </div>
+            </div>
+        </div>
+		<script>
+			if ('serviceWorker' in navigator) {
+				console.log("[*] Register serviceWorker ...");
+				navigator.serviceWorker.register('/tetris/sw.js').then(function(registration) {
+					// Registration was successful
+					console.log('[*] ServiceWorker registration successful with scope: ', registration.scope);
+				}, function(err) {
+					// registration failed :(
+					console.log('[*] ServiceWorker registration failed: ', err);
+				});
+			}
+			else console.log("[*] ServiceWorker not supported by your browser!");
+		</script>
+    </body>
+</html>
