@@ -4,8 +4,8 @@ var urlsToCache = [
 	'/tetris/main.css',
 	'/tetris/main.js',
 	'/tetris/jquery.min.js',
-	'/tetris/logo.png',
-	'/tetris/tetris-gameboy-01.mp3',
+	'/tetris/logo.png'
+/*	'/tetris/tetris-gameboy-01.mp3',
 	'/tetris/tetris-gameboy-02.mp3',
 	'/tetris/tetris-gameboy-03.mp3',
 	'/tetris/tetris-gameboy-04.mp3',
@@ -13,7 +13,7 @@ var urlsToCache = [
 	'/tetris/line-drop.mp3',
 	'/tetris/block-rotate.mp3',
 	'/tetris/line-remove.mp3',
-	'/tetris/gameover.mp3'
+	'/tetris/gameover.mp3' */
 ];
 
 // Install Event
