@@ -77,5 +77,11 @@
 			}
 			else console.log("[*] ServiceWorker not supported by your browser!");
 		</script>
+
+<script>
+window.addEventListener("onbeforeinstallprompt",function(event){
+    showInstallPromotion();
+});
+</script>
     </body>
 </html>
