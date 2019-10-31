@@ -3,6 +3,7 @@
 	"short_name": "TETRIS",
 	"description": "Welcome back to the 90's. Enjoy the retro game TETRIS!",
 	"orientation": "portrait", 
+        "start_url": "/",
 	"display": "standalone", 
 	"background_color": "grey",
 	"theme_color": "black",
