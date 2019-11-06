@@ -627,12 +627,10 @@ function updateStatus(event){
     isOnline = navigator.onLine;
     var status = $("#status");
     if (isOnline) {
-        status.removeClass("glyphicon-plane");
-        status.addClass("glyphicon-signal");
+	status.text("&#9992;");
     }
     else {
-        status.removeClass("glyphicon-signal");
-        status.addClass("glyphicon-plane");
+	status.text("&#127757;");
     }
 }
 
