@@ -5,9 +5,10 @@
         <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes"/> 
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <title>Tetris</title>
-		<link rel="icon" href="logo.png">
-		<link rel="manifest" href="manifest.json">
+        <link rel="apple-mobile-web-app-title" title="Tetris">
+	<title>Tetris</title>
+	<link rel="icon" href="logo.png">
+	<link rel="manifest" href="manifest.json">
         <link rel="stylesheet" type="text/css" href="main.css">
         <script src="jquery.min.js"></script>
         <script src="main.js"></script>
@@ -86,5 +87,6 @@ window.addEventListener("beforeinstallprompt",function(event){
     event.prompt();
 });
 </script>
+	<span id="status" class="glyphicon glyphicon-signal"></span>
     </body>
 </html>

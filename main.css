@@ -93,3 +93,15 @@ small {
 	left: 25%;
 	text-align: center;
 }
+#status {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: x-large;
+}
+.glyphicon-signal {
+    color: green;
+}
+.glyphicon-plane {
+    color: red;
+}

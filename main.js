@@ -621,5 +621,25 @@ function restartGame(){
 	$("body").css("background","white");
 	init();
 }
+var isOnline = navigator.onLine;
+
+function updateStatus(event){
+    isOnline = navigator.onLine;
+    var status = $("#status");
+    if (isOnline) {
+        status.removeClass("glyphicon-plane");
+        status.addClass("glyphicon-signal");
+    }
+    else {
+        status.removeClass("glyphicon-signal");
+        status.addClass("glyphicon-plane");
+    }
+}
+
+window.addEventListener("load",function(){
+    window.addEventListener("online",updateStatus);
+    window.addEventListener("offline",updateStatus);
+    updateStatus();
+});
 
 $(document).ready(init);
