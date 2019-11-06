@@ -627,10 +627,10 @@ function updateStatus(event){
     isOnline = navigator.onLine;
     var status = $("#status");
     if (!isOnline) {
-	status.html("&#9992;");
+	status.html("&#9888;");
     }
     else {
-	status.html("&#127757;");
+	status.html("&#128246;");
     }
 }
 
