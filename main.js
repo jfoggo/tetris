@@ -626,7 +626,7 @@ var isOnline = navigator.onLine;
 function updateStatus(event){
     isOnline = navigator.onLine;
     var status = $("#status");
-    if (isOnline) {
+    if (!isOnline) {
 	status.html("&#9992;");
     }
     else {
